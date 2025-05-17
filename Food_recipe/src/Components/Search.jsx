@@ -5,7 +5,7 @@ const URL = "https://api.spoonacular.com/recipes/complexSearch";
 const API_KEY = "d3bbf27960514987ae3db7252e51effb";
 
 export default function Search({ foodData, setFoodData }) {
-  const [query, setQuery] = useState("pasta");
+  const [query, setQuery] = useState("burger");
   useEffect(() => {
     async function fetchFood() {
       const res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
